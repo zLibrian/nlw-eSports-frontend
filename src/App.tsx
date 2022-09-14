@@ -1,9 +1,11 @@
+import React from 'react';
 import game1 from './assets/game-1.png'
 import game2 from './assets/game-2.png'
 import game3 from './assets/game-3.png'
 import game4 from './assets/game-4.png'
 import game5 from './assets/game-5.png'
 import game6 from './assets/game-6.png'
+import lupa from './assets/lupa.svg'
 import logoImg from './assets/nlw-logo.svg'
 import "./styles/main.css"
 
@@ -55,6 +57,18 @@ function App() {
               </div>
             </a>
         </div>
+        <section className='pt-1 bg-nlw-gradient self-stretch mt-8 rounded-lg'>
+          <div className='py-6 px-8 bg-[#2A2634] w-full rounded flex justify-between items-center' >
+            <div>
+              <p className='text-white text-2xl font-black'>Não encontrou seu duo?</p>
+              <p className='text-zinc-400 mt-1'>Publique um anúncio para encontrar novos players!</p>
+            </div>
+            <button className='flex items-center gap-3 bg-violet-500 hover:bg-violet-600 text-white py-3 px-4 rounded'>
+              <img src={lupa} alt="icone lupa" />
+              <p>Publicar anúncio</p>
+            </button>
+          </div>
+        </section>
     </div>
   ) 
 }
